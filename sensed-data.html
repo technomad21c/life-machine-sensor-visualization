@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Series Line Graph</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://kit.fontawesome.com/42e7788d22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="scripts/fetch.js" defer></script>
+</head>
+<body>
+    <header>
+        <i class="fas fa-pallet"></i>
+        <span class="title"> Sensor Data Visualization </span>
+    </header>
+    <section class="input-date">
+        <div class='date form-group1' id='datetimepicker'>
+            <button class="date-get" id="date-prev"><i class="fas fa-caret-left"></i></button>
+            <input type='text' class="form-field" id="target-date" placeholder="date"/>
+            <button class="date-get" id="date-next"><i class="fas fa-caret-right"></i></button>
+        </div>
+    </section>
+
+    <section>
+        <div class="data form-group2">
+            <button class="data-get" id="sensor-data-rms"> RMS </button>
+            <button class="data-get" id="sensor-data-min"> MIN </button>
+            <button class="data-get" id="sensor-data-max"> MAX </button>
+        </div>
+    </section>
+
+    <section>
+        <div class="comparison">
+            <button class="data-get" id="comp-1"> Health & Fault comparison 1 </button>
+            <button class="data-get" id="comp-2"> Health & Fault comparison 2 </button>
+            <button class="data-get" id="comp-3"> Health & Fault comparison 3 </button>
+        </div>
+    </section>
+    <canvas id="line-chart"></canvas>
+    <span
+</body>
+</html>
