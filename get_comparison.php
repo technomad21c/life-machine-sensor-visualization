@@ -1,5 +1,5 @@
 <?php
-$db_conn = mysqli_connect("localhost", "root", "1", "TestDatabase");
+$db_conn = mysqli_connect("localhost", "user", "password", "testdb");
 
 if (!$db_conn) {
     echo '{"error": DB_CONNECTION, "message": "' . $mysqli_connect_error() . '"}';
